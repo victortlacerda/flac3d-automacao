@@ -1,0 +1,5 @@
+# Parte EXTERNA ao FLAC3D (gráficos, cálculos, testes). Python 3.9 ou mais novo.
+# Os scripts que rodam DENTRO do FLAC3D usam só o Python embutido + itasca + numpy.
+numpy>=1.21
+matplotlib>=3.5
+openpyxl>=3.1

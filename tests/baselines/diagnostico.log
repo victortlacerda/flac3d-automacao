@@ -1,0 +1,189 @@
+== cenario: diagnostico
+== comandos enviados ao FLAC3D:
+CMD python-reset-state false
+== arquivos: ['diagnostico.json', 'diagnostico.py', 'diagnostico.txt']
+== diagnostico.json (normalizado):
+{
+  "ambiente": [
+    "__file__definido",
+    "codificacao_padrao",
+    "executavel",
+    "pasta_de_trabalho",
+    "pasta_saida",
+    "plataforma",
+    "python",
+    "stdin_existe",
+    "stdin_isatty",
+    "sys_path_inicio",
+    "versao_info"
+  ],
+  "conferencias": {
+    "arrays": {
+      "gridpointarray.disp": "existe, shape [27, 3]",
+      "gridpointarray.extra": "AUSENTE",
+      "gridpointarray.fixity": "AUSENTE",
+      "gridpointarray.force_app": "AUSENTE",
+      "gridpointarray.ids": "existe, shape [27]",
+      "gridpointarray.pos": "existe, shape [27, 3]",
+      "gridpointarray.vel": "AUSENTE",
+      "zonearray.extra": "AUSENTE",
+      "zonearray.faces": "AUSENTE",
+      "zonearray.gridpoints": "existe, shape [8, 8]",
+      "zonearray.ids": "existe, shape [8]",
+      "zonearray.in_group": "existe",
+      "zonearray.neighbors": "AUSENTE",
+      "zonearray.pos": "existe, shape [8, 3]",
+      "zonearray.prop_scalar": "AUSENTE",
+      "zonearray.set_group": "AUSENTE",
+      "zonearray.set_prop_scalar": "AUSENTE",
+      "zonearray.state": "AUSENTE",
+      "zonearray.strain": "AUSENTE",
+      "zonearray.stress": "existe, shape [8, 3, 3]",
+      "zonearray.stress_flat": "AUSENTE",
+      "zonearray.volume": "existe, shape [8]"
+    },
+    "ordem": {
+      "gridpoints_mesma_ordem": true,
+      "zonas_mesma_ordem": true
+    }
+  },
+  "falhas": [],
+  "itasca": {
+    "arquivo": "<itasca falso>",
+    "importado": true,
+    "nomes": [
+      "command",
+      "gridpoint",
+      "gridpointarray",
+      "structure",
+      "zone",
+      "zonearray"
+    ],
+    "submodulos": {
+      "attach": "AUSENTE (ModuleNotFoundError)",
+      "fish": "AUSENTE (ModuleNotFoundError)",
+      "gridpoint": [
+        "Gridpoint",
+        "count",
+        "list"
+      ],
+      "gridpointarray": [
+        "disp",
+        "ids",
+        "np",
+        "pos"
+      ],
+      "group": "AUSENTE (ModuleNotFoundError)",
+      "history": "AUSENTE (ModuleNotFoundError)",
+      "interface": "AUSENTE (ModuleNotFoundError)",
+      "interfacearray": "AUSENTE (ModuleNotFoundError)",
+      "structure": [
+        "list"
+      ],
+      "table": "AUSENTE (ModuleNotFoundError)",
+      "util": "AUSENTE (ModuleNotFoundError)",
+      "vec": "AUSENTE (ModuleNotFoundError)",
+      "zone": [
+        "Zone",
+        "count",
+        "find",
+        "list"
+      ],
+      "zonearray": [
+        "gridpoints",
+        "ids",
+        "in_group",
+        "np",
+        "pos",
+        "stress",
+        "volume"
+      ]
+    }
+  },
+  "modelo": {
+    "amostra_gridpoint": {
+      "disp": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "id": 1,
+      "pos": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "amostra_zona": {
+      "gridpoints": [
+        1,
+        2,
+        4,
+        10,
+        5,
+        13,
+        11,
+        14
+      ],
+      "group_default": "inferior",
+      "id": 1,
+      "model": "mohr-coulomb",
+      "pos": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "stress": [
+        [
+          -40000.0,
+          0.0,
+          500.0
+        ],
+        [
+          0.0,
+          -40000.0,
+          0.0
+        ],
+        [
+          500.0,
+          0.0,
+          -80000.0
+        ]
+      ],
+      "vol": 1.0
+    },
+    "elementos_estruturais": {},
+    "gridpoints": 27,
+    "grupos_slot_default": {
+      "inferior": 4,
+      "superior": 4
+    },
+    "metodos_gridpoint": [
+      "disp",
+      "id",
+      "pos"
+    ],
+    "metodos_zone": [
+      "gridpoints",
+      "group",
+      "id",
+      "model",
+      "pos",
+      "stress",
+      "vol"
+    ],
+    "modelos_constitutivos": {
+      "elastic": 4,
+      "mohr-coulomb": 4
+    },
+    "zonas": 8
+  },
+  "pacotes": {
+    "numpy_presente": true
+  },
+  "script": {
+    "data": "<data>",
+    "nome": "diagnostico.py",
+    "versao": "0.1.0"
+  }
+}

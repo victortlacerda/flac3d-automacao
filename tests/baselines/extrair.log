@@ -1,0 +1,111 @@
+== cenario: extrair
+== comandos enviados ao FLAC3D:
+CMD python-reset-state false
+== console:
+Extração concluída: 8 zonas, 27 gridpoints
+  recalque_max_mm              8.0
+  recalque_max_pos_m           [2.0, 0.0, 2.0]
+  desl_horizontal_max_mm       1.0
+  desl_horizontal_max_pos_m    [2.0, 0.0, 2.0]
+  desl_total_max_mm            8.062
+  sigma1_max_kpa               80.06
+  p_max_kpa                    53.33
+  q_max_kpa                    40.08
+  volume_total_m3              8.0
+  zonas_por_grupo              {'inferior': 4, 'superior': 4}
+Arquivos gravados:
+  <PASTA>/extracao.npz
+  <PASTA>/extracao.json
+
+== extracao.json (normalizado):
+{
+  "arrays": {
+    "gp_desl": [
+      27,
+      3
+    ],
+    "gp_id": [
+      27
+    ],
+    "gp_pos": [
+      27,
+      3
+    ],
+    "zona_gps": [
+      8,
+      8
+    ],
+    "zona_grupo": [
+      8
+    ],
+    "zona_id": [
+      8
+    ],
+    "zona_modelo": [
+      8
+    ],
+    "zona_pos": [
+      8,
+      3
+    ],
+    "zona_tensao": [
+      8,
+      3,
+      3
+    ],
+    "zona_vol": [
+      8
+    ]
+  },
+  "gridpoints": 27,
+  "resumo": {
+    "desl_horizontal_max_mm": 1.0,
+    "desl_horizontal_max_pos_m": [
+      2.0,
+      0.0,
+      2.0
+    ],
+    "desl_total_max_mm": 8.062,
+    "p_max_kpa": 53.33,
+    "q_max_kpa": 40.08,
+    "recalque_max_mm": 8.0,
+    "recalque_max_pos_m": [
+      2.0,
+      0.0,
+      2.0
+    ],
+    "sigma1_max_kpa": 80.06,
+    "volume_total_m3": 8.0,
+    "zonas_por_grupo": {
+      "inferior": 4,
+      "superior": 4
+    }
+  },
+  "save": null,
+  "script": {
+    "data": "<data>",
+    "nome": "extrair_campos.py",
+    "versao": "0.1.0"
+  },
+  "sinal_npz": "FLAC3D: tração positiva, compressão negativa; deslocamento no sentido dos eixos",
+  "sinal_resumo": "geotécnico: compressão positiva, recalque positivo para baixo",
+  "slot_grupo": "default",
+  "unidades_npz": {
+    "comprimento": "m",
+    "deslocamento": "m",
+    "tensao": "Pa",
+    "volume": "m3"
+  },
+  "zonas": 8
+}
+== extracao.npz:
+gp_desl      [27, 3]    f        soma=-0.07425
+gp_id        [27]       i        soma=378
+gp_pos       [27, 3]    f        soma=81
+zona_gps     [8, 8]     i        soma=832
+zona_grupo   [8]        U        valores=['inferior', 'superior']
+zona_id      [8]        i        soma=36
+zona_modelo  [8]        U        valores=['elastic', 'mohr-coulomb']
+zona_pos     [8, 3]     f        soma=24
+zona_tensao  [8, 3, 3]  f        soma=-1.104e+06
+zona_vol     [8]        f        soma=8

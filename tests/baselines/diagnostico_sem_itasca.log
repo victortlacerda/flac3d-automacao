@@ -1,0 +1,42 @@
+== cenario: diagnostico_sem_itasca
+== comandos enviados ao FLAC3D:
+== arquivos: ['diagnostico.json', 'diagnostico.py', 'diagnostico.txt']
+== diagnostico.json (normalizado):
+{
+  "ambiente": [
+    "__file__definido",
+    "codificacao_padrao",
+    "executavel",
+    "pasta_de_trabalho",
+    "pasta_saida",
+    "plataforma",
+    "python",
+    "stdin_existe",
+    "stdin_isatty",
+    "sys_path_inicio",
+    "versao_info"
+  ],
+  "conferencias": {
+    "arrays": {},
+    "ordem": {}
+  },
+  "falhas": [
+    {
+      "erro": "ModuleNotFoundError: No module named 'itasca' (rodando fora do FLAC3D?)",
+      "etapa": "import itasca"
+    }
+  ],
+  "itasca": {
+    "importado": false,
+    "submodulos": {}
+  },
+  "modelo": {},
+  "pacotes": {
+    "numpy_presente": true
+  },
+  "script": {
+    "data": "<data>",
+    "nome": "diagnostico.py",
+    "versao": "0.1.0"
+  }
+}

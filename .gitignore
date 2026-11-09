@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Saídas geradas pelos scripts (rodadas locais)
+diagnostico.json
+diagnostico.txt
+extracao*.npz
+extracao*.json
+
+# Modelos e arquivos do FLAC3D (grandes; ficam fora do repositório)
+*.f3sav
+*.sav
+*.f3log
